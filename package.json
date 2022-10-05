@@ -11,7 +11,9 @@
     "start": "node src/createapp.js",
     "build": "rm -r lib && babel src --presets minify --out-dir lib",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -42,7 +44,8 @@
     "package.json"
   ],
   "dependencies": {
-    "inquirer": "^7.1.0"
+    "inquirer": "^7.1.0",
+    "@snyk/protect": "latest"
   },
   "directories": {
     "test": "tests"
@@ -74,5 +77,6 @@
         "minify"
       ]
     ]
-  }
+  },
+  "snyk": true
 }
