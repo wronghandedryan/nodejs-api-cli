@@ -42,7 +42,7 @@
     "package.json"
   ],
   "dependencies": {
-    "inquirer": "^7.1.0"
+    "inquirer": "^9.0.0"
   },
   "directories": {
     "test": "tests"
